@@ -1,3 +1,19 @@
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = "radiant-page_preview-extension"
+    gem.summary = %Q{Preview extension for Radiant CMS}
+    gem.description = %Q{Enables previewing pages from the edit screen}
+    gem.email = "benny@gorilla-webdesign.be"
+    gem.homepage = "https://github.com/tricycle/radiant-page-preview-extension"
+    gem.authors = ["Adam Sven Johnson", "Glenn Francis Murray", "Kunal Shah", "Matthew Fallshaw"]
+    gem.add_dependency 'radiant', ">=0.9.1"
+    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+  end
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. This is only required if you plan to package copy_move as a gem."
+end
+
 # I think this is the one that should be moved to the extension Rakefile template
 
 # In rails 1.2, plugins aren't available in the path until they're loaded.
